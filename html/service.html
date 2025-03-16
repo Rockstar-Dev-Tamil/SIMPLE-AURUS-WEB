@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service - Aurus Paradise</title>
+    <link rel="stylesheet" href="C:/Aurus Web/css/styles.css">
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body>
+    <div class="site-name">
+        <span>Aurus Paradise</span>
+    </div>
+    <div class="tabs">
+        <a href="C:/Aurus Web/index.html">Home 🏠</a>
+        <a href="C:/Aurus Web/html/discord.html">Discord 🎮</a>
+        <a href="C:/Aurus Web/html/service.html">Service 💼</a>
+        <a href="C:/Aurus Web/html/about.html">About 📘</a>
+        <a href="C:/Aurus Web/html/contact.html">Contact ✉️</a>
+    </div>
+    <div class="logo">
+        <img src="C:/Aurus Web/assets/logo.png" alt="Aurus Paradise Logo" width="100">
+    </div>
+    <div class="container">
+        <h1>Our Services 💼</h1>
+        <p class="intro">Learn more about the services we offer and how we can help you achieve your goals.</p>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'SAMP')">San Andreas Multiplayer 🎮</button>
+            <button class="tablinks" onclick="openTab(event, 'Bot')">Bot Development 🤖</button>
+            <button class="tablinks" onclick="openTab(event, 'Minecraft')">Minecraft Projects ⛏️</button>
+            <button class="tablinks" onclick="openTab(event, 'GFX')">Graphic Design 🎨</button>
+            <button class="tablinks" onclick="openTab(event, 'MTA')">Multi Theft Auto 🚗</button>
+            <button class="tablinks" onclick="openTab(event, 'Discord')">Discord Development 💬</button>
+            <button class="tablinks" onclick="openTab(event, 'Web')">Web Development 🌐</button>
+        </div>
+
+        <div id="SAMP" class="tabcontent">
+            <h3>San Andreas Multiplayer 🎮</h3>
+            <p>Showcase your SA-MP mods and projects here.</p>
+            <img src="C:/Aurus Web/assets/samp.png" alt="San Andreas Multiplayer" width="300">
+        </div>
+
+        <div id="Bot" class="tabcontent">
+            <h3>Bot Development 🤖</h3>
+            <p>Highlight your bot development work here.</p>
+            <img src="C:/Aurus Web/assets/bot.jpg" alt="Bot Development" width="300">
+        </div>
+
+        <div id="Minecraft" class="tabcontent">
+            <h3>Minecraft Projects ⛏️</h3>
+            <p>Display your Minecraft projects and builds here.</p>
+            <img src="C:/Aurus Web/assets/minecraft.png" alt="Minecraft Projects" width="300">
+        </div>
+
+        <div id="GFX" class="tabcontent">
+            <h3>Graphic Design 🎨</h3>
+            <p>Show your graphic design works here.</p>
+            <img src="C:/Aurus Web/assets/gfx.png" alt="Graphic Design" width="300">
+        </div>
+
+        <div id="MTA" class="tabcontent">
+            <h3>Multi Theft Auto 🚗</h3>
+            <p>Feature your Multi Theft Auto projects here.</p>
+            <img src="C:/Aurus Web/assets/mta.png" alt="Multi Theft Auto" width="300">
+        </div>
+
+        <div id="Discord" class="tabcontent">
+            <h3>Discord Development 💬</h3>
+            <p>Highlight your Discord development work here.</p>
+            <img src="C:/Aurus Web/assets/discord.jpg" alt="Discord Development" width="300">
+        </div>
+
+        <div id="Web" class="tabcontent">
+            <h3>Web Development 🌐</h3>
+            <p>Showcase your web development projects here.</p>
+            <img src="C:/Aurus Web/assets/web.jpg" alt="Web Development" width="300">
+        </div>
+    </div>
+
+    <script>
+        // Open the first tab by default
+        document.getElementsByClassName("tablinks")[0].click();
+    </script>
+</body>
+</html>
